@@ -1,0 +1,15 @@
+{
+  "name": "vanila-rest",
+  "version": "1.0.0",
+  "description": "simple vanila-rest",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "author": "iyurisko",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {}
+}
