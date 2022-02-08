@@ -4,9 +4,9 @@ import {
   createProduct, 
   updateProduct,
   deleteProduct
-} from "./controller/product.js";
+} from "../controllers/product.js";
 
-const route =  [
+const productRoutes =  [
   {
     method: 'GET',
     url: '/api/products',
@@ -34,4 +34,4 @@ const route =  [
   }
 ];
 
-export default route;
+export default productRoutes;

@@ -1,11 +1,11 @@
 import * as http from 'http';
-import route from './routes.js';
+import routes from './routes/index.js';
 import { notFoundRoutes } from './utils.js';
 
 const PORT = 8005
 const server = http.createServer((req, res) => {
   const { url, method } = req
-  const api = route.find(v => url.includes(v.url) && v.method === method)
+  const api = routes.find(v => url.includes(v.url) && v.method === method)
 
   if (api) return api.controller(req, res)
   return notFoundRoutes(res)
